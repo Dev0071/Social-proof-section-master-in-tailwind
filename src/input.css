@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'League Spartan', sans-serif;
+    }
+  }
+
+  #container {
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    background-image: url(../images/bg-pattern-bottom-desktop.svg);
+  }
+
+  @media (max-width: 375px) {
+    #container {
+      background-image: url(../images/bg-pattern-top-mobile.svg);
+      background-image: url(../images/bg-pattern-bottom-mobile.svg);
+    }
+  }
